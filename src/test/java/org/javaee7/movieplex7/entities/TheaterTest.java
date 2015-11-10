@@ -48,8 +48,6 @@ public class TheaterTest {
         Integer expResult = null;
         Integer result = instance.getId();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -61,8 +59,6 @@ public class TheaterTest {
         Integer id = null;
         Theater instance = new Theater();
         instance.setId(id);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -75,8 +71,6 @@ public class TheaterTest {
         int expResult = 0;
         int result = instance.getCapacity();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -88,8 +82,6 @@ public class TheaterTest {
         int capacity = 0;
         Theater instance = new Theater();
         instance.setCapacity(capacity);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -102,8 +94,6 @@ public class TheaterTest {
         Collection<ShowTiming> expResult = null;
         Collection<ShowTiming> result = instance.getShowTimingCollection();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -115,8 +105,6 @@ public class TheaterTest {
         Collection<ShowTiming> showTimingCollection = null;
         Theater instance = new Theater();
         instance.setShowTimingCollection(showTimingCollection);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -129,8 +117,6 @@ public class TheaterTest {
         int expResult = 0;
         int result = instance.hashCode();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -144,8 +130,6 @@ public class TheaterTest {
         boolean expResult = false;
         boolean result = instance.equals(object);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -155,11 +139,9 @@ public class TheaterTest {
     public void testToString() {
         System.out.println("toString");
         Theater instance = new Theater();
-        String expResult = "";
+        String expResult = "foo.Theater[ id=" + instance.getId() + " ]";
         String result = instance.toString();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }

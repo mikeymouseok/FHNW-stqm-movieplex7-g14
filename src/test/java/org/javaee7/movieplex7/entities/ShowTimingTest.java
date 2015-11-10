@@ -53,8 +53,6 @@ public class ShowTimingTest {
         Integer expResult = null;
         Integer result = instance.getId();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -65,9 +63,7 @@ public class ShowTimingTest {
         System.out.println("setId");
         Integer id = null;
         ShowTiming instance = new ShowTiming();
-        instance.setId(id);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        instance.setId(id);       
     }
 
     /**
@@ -80,8 +76,6 @@ public class ShowTimingTest {
         int expResult = 0;
         int result = instance.getDay();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -93,8 +87,6 @@ public class ShowTimingTest {
         int day = 0;
         ShowTiming instance = new ShowTiming();
         instance.setDay(day);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -107,8 +99,6 @@ public class ShowTimingTest {
         Timeslot expResult = null;
         Timeslot result = instance.getTimingId();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -120,8 +110,6 @@ public class ShowTimingTest {
         Timeslot timingId = null;
         ShowTiming instance = new ShowTiming();
         instance.setTimingId(timingId);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -134,8 +122,6 @@ public class ShowTimingTest {
         Theater expResult = null;
         Theater result = instance.getTheaterId();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -147,8 +133,6 @@ public class ShowTimingTest {
         Theater theaterId = null;
         ShowTiming instance = new ShowTiming();
         instance.setTheaterId(theaterId);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -161,8 +145,6 @@ public class ShowTimingTest {
         Movie expResult = null;
         Movie result = instance.getMovieId();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -174,8 +156,6 @@ public class ShowTimingTest {
         Movie movieId = null;
         ShowTiming instance = new ShowTiming();
         instance.setMovieId(movieId);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -188,8 +168,6 @@ public class ShowTimingTest {
         int expResult = 0;
         int result = instance.hashCode();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -203,8 +181,6 @@ public class ShowTimingTest {
         boolean expResult = false;
         boolean result = instance.equals(object);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -212,13 +188,17 @@ public class ShowTimingTest {
      */
     @Test
     public void testToString() {
+        String movieTitel = "james bond";
         System.out.println("toString");
         ShowTiming instance = new ShowTiming();
-        String expResult = "";
+        Movie m = new Movie(999, movieTitel, "");
+        
+        Timeslot ts = new Timeslot(99, "10:00", "12:00");
+        instance.setMovieId(m);
+        String expResult = movieTitel + ", " + "10:00";//movieId.getName() + ", " + timingId.getStartTime()
+        instance.setTimingId(ts);
         String result = instance.toString();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
     
 }
